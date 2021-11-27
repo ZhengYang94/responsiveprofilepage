@@ -1,0 +1,367 @@
+<html>
+
+<head>
+    <title>Responsive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+
+        div#container {
+            background-color: white;
+        }
+
+        div#container header {
+            width: inherit;
+            height: 80px;
+            /* background-color: green; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            font-family: 'Mukta', sans-serif;
+            font-size: 12px;
+        }
+
+        section {
+
+            /* background-color: red; */
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .menu {
+            width: inherit;
+            height: 420px;
+            /* background-color: lightblue; */
+            overflow: hidden;
+            text-align: center;
+            margin: 0px 10px;
+            font-family: 'Mukta', sans-serif;
+            font-size: 15px;
+        }
+
+        .menu img {
+            padding-top: 10px;
+            height: 280px;
+            width: 200px;
+
+        }
+
+        .menu p {
+            font-size: 12px;
+        }
+
+        /* .menu h3 {
+            font-family: 'Mukta', sans-serif;
+            font-size: 20px;
+            max-width: 200px;
+             padding-left: 15px; 
+            text-align: center;
+            line-height: 30px;
+        } */
+
+        @media screen and (min-width: 700px) {
+            section {
+
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                
+            }
+            .menu {
+                width: 20%;
+            }
+
+
+            }
+
+    /* SECTION ENDS HERE */
+
+    div#selector {
+            width: 200px;
+            height: 30px;
+            /* background-color: green; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            font-family: 'Mukta', sans-serif;
+            font-size: 18px;
+            margin: 0 auto;
+           
+    }
+
+    /* SELECTOR ENDS HERE */
+
+    div#banner {
+
+        width: inherit;
+        height: 400px;
+        margin: 40 auto;
+        text-align: center;
+        font-family: 'Mukta', sans-serif;
+        padding-bottom: 120px;
+        /* background-color: red; */
+    }
+
+    div#banner img {
+
+        width: 400px;
+        height: 260px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    div#banner h4 {
+
+        font-style: italic;
+        font-size: 14px;
+
+    }
+
+    div#banner p {
+        font-size: 14px;
+    }
+
+    div#bannerL1 {
+        width: inherit;
+        height: 1px;
+        background-color: rgb(224, 221, 221);
+        margin: 30 auto;
+    }
+
+    div#bannerL2 {
+        width: inherit;
+        height: 1px;
+        background-color: rgb(224, 221, 221);
+        margin: 60 auto;
+    }
+
+    /* BANNER ENDS HERE */
+
+    div#bottomSection {
+            /* background-color: red; */
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: 0 auto;
+    }
+
+    .bottomMenu {
+            width: inherit;
+            height: 280px;
+            /* background-color: lightblue; */
+            overflow: hidden;
+            text-align: left;
+            margin: 30px 60px;
+            font-family: 'Mukta', sans-serif;
+            font-size: 15px;
+            /* max-width: 200px; */
+            line-height: 20px;
+    }
+
+
+    .bottomMenu p {
+        max-width: 300px;
+        margin: 0 auto;
+        font-size: 14px;
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    @media screen and (min-width: 700px) {
+            div#bottomSection {
+
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                
+            }
+            .bottonMenu {
+                width: 30%;
+            }
+        }
+
+    div#pic1 {
+
+        width: 200px;
+
+    }
+
+    div#pic1 img {
+        width: 60px;
+        height: 60px;
+    }
+
+    div#pic2 img {
+        width: 60px;
+        height: 60px;
+    }
+
+    div#blogL {
+
+        width: inherit;
+        height: 1px;
+        background-color: gray;
+        margin: 30 auto;
+    }
+
+    .bottomMenu h3 {
+        padding-bottom: 30px;
+        font-size: 26px;
+    }
+
+    .bottomMenu h4 {
+
+        position: relative;
+        left: 80px;
+        bottom: 50px;
+        font-size: 20px;
+    }
+
+    div#pic3 {
+        
+        max-width: 320px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+            <h1>=</h1>
+            <h1>My Food</h1>
+            <h1>Mail</h1>
+        </header>
+
+        <section>
+            <div class="menu">
+                <img src="web_1/images/sandwich.jpg"/>
+                <h3>The Perfect Sandwich. A Real NYC Classic</h3>
+                <p>Just some random text, lorem ipsum text</p>
+            </div>
+            <div class="menu">
+                <img src="web_1/images/steak.jpg"/>
+                <h3>Let Me Tell You About This Steak</h3>
+                <p>Just some random text, lorem ipsum text</p>
+            </div>
+            <div class="menu">
+                <img src="web_1/images/cherries.jpg"/>
+                <h3>Cherries. interrupted</h3>
+                <p>Just some random text, lorem ipsum text</p>
+            </div>
+            <div class="menu">
+                <img src="web_1/images/wine.jpg"/>
+                <h3>Once Again,Robust Wine and Vegetable Pasta</h3>
+                <p>Just some random text, lorem ipsum text</p>
+            </div>
+            <div class="menu">
+                <img src="web_1/images/popsicle.jpg"/>
+                <h3>All I Need is a Popsicle</h3>
+                <p>Just some random text, lorem ipsum text</p>
+            </div>
+            <div class="menu">
+                <img src="web_1/images/salmon.jpg"/>
+                <h3>Salmon For Your Skin</h3>
+                <p>Just some random text, lorem ipsum text</p>
+            </div>
+            <div class="menu">
+                <img src="web_1/images/sandwich.jpg"/>
+                <h3>The Perfect Sandwich. A Real Classic</h3>
+                <p>Just some random text, lorem ipsum text</p>
+            </div>
+            <div class="menu">
+                <img src="web_1/images/croissant.jpg"/>
+                <h3>Le French</h3>
+                <p>Just some random text, lorem ipsum text</p>
+            </div>
+        </section>
+        <div id="selector">
+            <div class="number">
+                <p> &larr;</p>
+            </div>
+            <div class="number">
+                <p>1</p>
+            </div>
+            <div class="number">
+                <p>2</p>
+            </div>
+            <div class="number">
+                <p>3</p>
+            </div>
+            <div class="number">
+                <p>4</p>
+            </div>
+            <div class="number">
+                <p>&rarr;</p>
+            </div>
+        </div>
+    
+        <div id="banner">
+        
+            <div id="bannerL1"></div>
+            <h2>About Me. The Food Man</h2>
+
+            <img src="web_1/images/chef.jpg"/>
+
+            <h3>I am Who I Am!</h3>
+            <h4>With Passion For Real. Good Food</h4>
+            <p>Just me, myself and I, exploring the universe of unknown.I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I was not in lorem ipsum.</p>
+            <div id="bannerL2"></div>
+        </div>
+
+        <div id="bottomSection">
+
+            <div class="bottomMenu">
+                <h3>FOOTER</h3>
+                <p>Just me, myself and I, exploring the universe of unknown.I have a heart of love and an interest of lorem ipsum and mauris neque quam blog.</p>
+            </div>
+                
+            <div class="bottomMenu">
+                <h3>BLOG POSTS</h3>
+                <div id="pic1">
+                <img src="web_1/images/workshop.jpg"/>
+                <h4>LOREM</h4>
+                </div>
+                <div id="blogL"></div>
+                <div id="pic2">
+                <img src="web_1/images/gondol.jpg"/>
+                <h4>LOREM</h4>
+                </div>
+
+            </div>
+
+            <div class="bottomMenu">
+                <h3>POPULAR TAGS</h3>
+                <div id="pic3">
+                <img src="web_1/images/Tags.jpg"/>
+                </div>
+            </div>
+
+        </div>
+
+    
+    </div>
+</body>
+
+
+</html>
